@@ -1,0 +1,10 @@
+
+If you want to run this as a daemon on Linux, 
+
+sudo cp axpert.service /usr/lib/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable axpert.service
+sudo systemctl start axpert.service
+sudo systemctl status axpert.service
+
+

@@ -1,0 +1,14 @@
+[Unit]
+Description=Axpert Data logger script
+Wants=network-online.target
+After=network-online.target
+
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /etc/axpert/axpert.py
+StandardOutput=null
+StandardError=null
+
+[Install]
+WantedBy=multi-user.target

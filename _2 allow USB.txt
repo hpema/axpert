@@ -1,0 +1,5 @@
+# sudo vi /etc/udev/rules.d/50-datalogger.rules
+
+
+ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="0665", ATTRS{idProduct}=="5161", MODE="660", GROUP="plugdev"
+
